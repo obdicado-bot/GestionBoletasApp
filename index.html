@@ -1366,7 +1366,7 @@ const SharePointSync = (() => {
         const dataUrl = await PhotoStore.dataURL(f.id);
         if (!dataUrl) continue;
         fotos.push({
-          Nombre: f.name || `boleta-${boleta.numero}-foto${i + 1}.jpg`,
+          Nombre: `Boleta-${boleta.numero}-Foto-${i + 1}.jpg`,
           ContenidoBase64: dataUrl.split(',')[1] || ''
         });
       } catch (error) {
